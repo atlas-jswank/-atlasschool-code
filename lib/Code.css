@@ -1,0 +1,58 @@
+.code-box {
+    padding: 1em;
+    border-radius: 30px;
+    display: flex;
+    align-items: stretch;
+    margin-bottom: 10px;
+}
+
+.code-box > div {
+    flex-basis: 100%;
+}
+
+.code-box h6 {
+    margin: 0 0 0 40px;
+    padding: 0;
+}
+
+.code-box > div:nth-child(2) {
+    border-left: 1px solid var(--off-white-light);
+    padding-left: 1em;
+  }
+  
+
+.lineNumbers {
+    counter-reset: step;
+    counter-increment: step 0;
+  }
+  
+  .lineNumbers .line::before {
+    content: counter(step);
+    counter-increment: step;
+    width: 1rem;
+    margin-right: 1.5rem;
+    display: inline-block;
+    text-align: right;
+    color: rgba(115,138,148,.4)
+  }
+
+  .loading {
+    display: inline-block;
+    height: 1em;
+    position: relative;
+    overflow: hidden;
+    background-color: var(--blue);
+    width: 100%;
+    min-height: 200px;
+    border-radius: 30px;;
+    filter: brightness(130%);
+  
+    
+    
+  }
+
+  @keyframes shimmer {
+    100% {
+      transform: translateX(100%);
+    }
+  }
